@@ -206,11 +206,10 @@ $(document).ready(function() {
             // Wait for the entire page to load
             $(window).on('load', function() {
                 // Show the main div after the page has loaded
-                $('main').fadeIn();
-
+                $('main').css('display', 'block');
             });
         });
-
+        
     const lenis = new Lenis()
 function raf(time) {
   lenis.raf(time)
