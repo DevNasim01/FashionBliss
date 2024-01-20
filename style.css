@@ -400,3 +400,6 @@ div{
 .text-overlay p {
     margin-bottom: 1.4rem;
 }
+main{
+    display: none;
+}

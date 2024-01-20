@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FashionBliss</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <video src="Sky2loop 2645.mp4" autoplay muted loop></video>
     <section class="bg"></section>
+    <nav class="nav">FashionBliss</nav>
     <main>
-        <nav class="nav">FashionBliss</nav>
-
         <div class="box1">
             <img src="res_1\Calvin Pausania.png" alt="Loading...">
         </div>
@@ -201,14 +199,11 @@
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script> 
 <script>
 
-
-$(document).ready(function() {
-            // Wait for the entire page to load
-            $(window).on('load', function() {
-                // Show the main div after the page has loaded
-                $('main').css('display', 'block');
-            });
+        var main = document.querySelector('main');
+        window.addEventListener("load", function(){
+            main.style.display = "block";
         });
+
         
     const lenis = new Lenis()
 function raf(time) {
