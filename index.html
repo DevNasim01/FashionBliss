@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <video src="https://static.videezy.com/system/resources/previews/000/038/509/original/sky2Loop-264.mp4" autoplay muted loop></video>
+    <video  id="backgroundVideo" src="https://static.videezy.com/system/resources/previews/000/038/509/original/sky2Loop-264.mp4" autoplay muted loop preload="auto"></video>
     <section class="bg"></section>
     <nav class="nav">FashionBliss</nav>
     <main>
@@ -231,3 +231,11 @@ var lastScroll = 0;
         });
 </script>
 <script src="script.js"></script>
+<script defer>
+    document.addEventListener('DOMContentLoaded', function() {
+        var backgroundVideo = document.getElementById('backgroundVideo');
+        if (backgroundVideo) {
+            backgroundVideo.load();
+        }
+    });
+</script>
